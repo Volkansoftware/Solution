@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 
+    <script>
+        
+        
+        var oranArr =[0,1,8,18,18,1];
+        var tutarArr =[10,15,12,23,30,40];
+        var kodArr= [0071,0071,0073,0073,0071,0071]
+         tutarArr[1]=58 
+         
+        console.log(`cıkarılan eleman: ${tutarArr.pop()} dizinin yeni hali -> ${tutarArr}`);
+        console.log(`cıkarılan eleman: ${oranArr.pop()} dizinin yeni hali -> ${oranArr}`);
+        
+       
+        kodArr.pop()
+        
+        kodArr.forEach(number => {
+       var sonuc= number.toString(8).padStart(4, '0')
+       kodArr.push(sonuc)
+            })
+            kodArr.splice(0,5)
+            kodArr.push(0071)
+            console.log(`cıkarılan eleman: ${kodArr.pop()} dizinin yeni hali -> ${kodArr} `)
+
+        
+
+    </script>
+</body>
+</html>
